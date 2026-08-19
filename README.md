@@ -1,19 +1,25 @@
-# 🎈 Blank app template
+# Product Price Monitor
 
-A simple Streamlit app template for you to modify!
+A Streamlit prototype for comparing a product price with prices found on competitor product pages.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Features
 
-### How to run it on your own machine
+- Accepts one own-product URL and multiple competitor URLs
+- Extracts prices from Open Graph metadata, schema markup, JSON-LD, and common HTML patterns
+- Retries selected blocked requests with browser-like headers
+- Highlights cheaper, equal, and more expensive competitor offers
+- Runs as an interactive Streamlit app
 
-1. Install the requirements
+## Run locally
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
 
-2. Run the app
+## Responsible use
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+Only request pages you are allowed to access. Respect website terms, robots policies, and reasonable request limits.
+
